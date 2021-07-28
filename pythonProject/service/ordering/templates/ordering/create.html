@@ -1,0 +1,23 @@
+{% extends 'ordering/base.html' %}
+
+{% block title %}
+Создать заказ
+{% endblock %}
+
+{% block content %}
+    <h1> Создать заказ</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.clients_name }}<br>
+        {{ form.clients_surname }}<br>
+        {{ form.clients_car }}<br>
+        {{ form.services }}<br>
+        {{ form.employees }}<br>
+        {{ form.orders }}<br>
+
+        <button type="submit" class="btn btn-success">Оформить</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}
+

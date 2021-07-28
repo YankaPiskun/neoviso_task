@@ -1,0 +1,21 @@
+{% extends 'ordering/base.html' %}
+
+{% block title %}
+Наши кдиенты
+{% endblock %}
+{% block content %}
+    <h1> Наши клиенты</h1>
+{{ Clients.Orders.surname }}
+ {% if clientss %}
+
+        {% for orderss in clientss %}
+            <div class="alert alert-warning mt-2">
+
+               <h3>{{ orderss.tile}}</h3>
+
+            </div>
+         {% endfor %}
+    {% else %}
+        <p>Нет заказа(</p>
+    {% endif %}
+{% endblock %}

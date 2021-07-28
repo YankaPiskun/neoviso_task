@@ -1,0 +1,22 @@
+{% extends 'ordering/base.html' %}
+
+{% block title %}
+Удаление заказа
+{% endblock %}
+
+{% block content %}
+    <h1> Удаление заказа</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.clients_name }}<br>
+        {{ form.clients_surname }}<br>
+        {{ form.clients_car }}<br>
+        {{ form.services }}<br>
+        {{ form.employees }}<br>
+        {{ form.orders }}<br>
+
+        <button type="submit" class="btn btn-success">Удалить заказ</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}

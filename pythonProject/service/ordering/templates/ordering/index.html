@@ -1,0 +1,28 @@
+{% extends 'ordering/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1> Главная</h1>
+    {% if orderss %}
+        {% for el in orderss %}
+            <div class="alert alert-warning mt-2">
+                 <h3>{{ el.title }}</h3>
+                <p>{{ el.clients_name }}</p>
+                <p>{{ el.clients_surname }}</p>
+                <p>{{ el.clients_car }}</p>
+                <p>{{ el.services }}</p>
+                <p>{{ el.employees }}</p>
+                 <p>{{ el.orders }}</p>
+                <a href="{% url 'order-detail' el.id %}" class="btn btn-warning">Подробнее</a>
+            </div>
+         {% endfor %}
+    {% else %}
+        <p>Нет заказа(</p>
+    {% endif %}
+{% endblock %}
+
+
+
