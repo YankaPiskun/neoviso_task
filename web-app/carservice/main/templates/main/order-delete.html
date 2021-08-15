@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Удаление заказа
+{% endblock %}
+
+{% block content %}
+<div class="features" xmlns="http://www.w3.org/1999/html">
+       <h1>Удаление заказа</h1>
+     <form method="post">
+         {% csrf_token %}
+         <button type="submit" class="btn btn-success">Удалить заказ</button>
+     </form>
+   </div>
+
+{% endblock %}

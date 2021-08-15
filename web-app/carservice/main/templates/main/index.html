@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+   <section class="main_logo">
+       <div class="container">
+        <h1 class="top_title">
+            Renovation with love
+        </h1>
+        <div class="btn_top">
+            <a href="{% url 'create' %}" class="top__inner__btn">Оформить заказ</a>
+            </div>
+       </div>
+   </section>
+       
+   
+
+{% endblock %}

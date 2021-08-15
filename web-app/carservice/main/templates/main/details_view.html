@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Подробнее
+{% endblock %}
+
+{% block content %}
+   <div class="features">
+       <h1>{{ order.service }}</h1>
+       <h3>{{ order.clients_name }}</h3>
+       <h3>{{ order.clients_surname }}</h3>
+       <h3>{{ order.car }}</h3>
+       <h3>{{ order.employee}}</h3>
+       <a href="{% url 'order-update' order.id %}" class="btn btn-info">Редактировать</a>
+        <a href="{% url 'order-delete' order.id %}" class="btn btn-danger">Удалить</a>
+       <a href="{% url 'order' %}" class="btn btn-info">Назад</a>
+
+
+   </div>
+
+{% endblock %}

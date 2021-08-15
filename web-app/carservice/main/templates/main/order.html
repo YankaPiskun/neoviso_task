@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<section class="create_logo">
+    <div class="container">
+   <div class="features">
+       <h1>Наши заказы</h1>
+    {% if orders %}
+       {% for el in orders %}
+       <div class="order">  
+        <div>
+       <h3> Имя {{ el.clients_name }}</h3>
+        </div>      
+        <div>
+       <h3>Фамилия {{ el.clients_surname }}</h3>
+    </div>
+       <div>
+       <h3>Марка {{ el.car }}</h3>
+    </div>
+       <div>
+       <h3>Сотрудник  {{ el.employee}}</h3>
+    </div>
+       <div>
+       <h3>Услуга  {{ el.service }}</h3>
+    </div>
+           <a href="{% url 'order-detail' el.id %}" class="btn btn-warning">Подробнее</a>
+       </div>
+       {% endfor %}
+       {% else %}
+        <p>Нет заказа(</p>
+    {% endif %}
+   </div>
+</div>
+</section>
+
+{% endblock %}

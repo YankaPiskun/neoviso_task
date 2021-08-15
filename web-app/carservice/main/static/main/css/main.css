@@ -1,0 +1,135 @@
+.container {
+    max-width: 1260px;
+    margin: 0 auto; 
+}
+
+.header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+.features{
+    padding-top: 100px;
+    text-align: center;
+    height: 600px;
+
+}
+.main_logo{
+    width: 100%;
+    height: 854px;
+    background-image: url(../img/index.jpg);
+    background-size: contain;    
+}
+.main_logo a{
+    text-decoration: none;   
+}
+
+.main_logo a:hover {
+    background: radial-gradient(ellipse at bottom, #918f89 0%, #888383 15%);
+    border-radius: 20px; 
+    color:black;
+}
+
+.top_title {
+    font-family: PlayfairDisplay-Bold;
+    font-size: 109px;
+    color: black;
+    padding-top: 135px;
+    text-align: center; 
+}
+
+.about_logo{
+    width: 100%;
+    height: 854px;
+    background-image: url(../img/about.jpg);
+    background-size: contain;    
+}
+
+
+
+.about_title {
+    font-family: PlayfairDisplay-Bold;
+    font-size: 70px;
+    color: black;
+    padding-top: 135px;
+    text-align: center; 
+}
+
+.about_text {
+    text-align: center;
+    padding-top: 57px;
+    line-height: 24px;
+    font-size: 25px;
+    font-family: ProximaNovaRegular;
+    font-weight: bold;
+    color: #56534c;
+    letter-spacing: 1px; 
+
+}
+
+
+.create_logo{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/bg_two.png);
+    background-size: contain;    
+}
+
+
+    
+
+.btn_top {
+    margin-top: 455px;
+    text-align: center; }
+  
+  .top__inner__btn {
+    min-width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background-image: url(../img/btn.png);
+    border: 2px solid #9e9c93;
+    border-style: dashed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    font-family: 'Alegreya Bold', arial;
+    font-size: 14px;
+    letter-spacing: 2px;
+    
+ }
+
+
+
+
+
+
+.order{
+    clear: both;
+    margin: 20px 34%;
+    background-color:darkgray;
+    border-radius: 20px;
+}
+
+form{
+    margin-left: 32%;
+    width: 500px;
+    padding-top: 150px;
+}
+
+.col-sm-10{
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+
+.footer{
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    top: 93%;
+    box-shadow: 50px 50px 50px 20px black;
+}
