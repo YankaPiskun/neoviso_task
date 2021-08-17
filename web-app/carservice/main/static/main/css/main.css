@@ -12,7 +12,7 @@
 .features{
     padding-top: 100px;
     text-align: center;
-    height: 600px;
+    padding-bottom: 100px;
 
 }
 .main_logo{
@@ -41,8 +41,8 @@
 
 .about_logo{
     width: 100%;
-    height: 854px;
-    background-image: url(../img/about.jpg);
+    height: 700px;
+    background-image: url(../img/bg_two.png);
     background-size: contain;    
 }
 
@@ -71,12 +71,49 @@
 
 .create_logo{
     width: 100%;
+    height: 710px;
+    background-image: url(../img/bg_two.png);
+    background-size: contain;    
+}
+
+.order_logo{
+    width: 100%;
+   
+    background-image: url(../img/bg_two.png);
+    background-size: contain;    
+}
+
+.employess_logo{
+    width: 100%;
     height: 700px;
     background-image: url(../img/bg_two.png);
     background-size: contain;    
 }
 
+.employees_photo{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.piskun{
+    padding-left: 20px;
+}
+.piskun p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
 
+.employees_photo img{
+    height: 200px;
+    width: 230px;
+    border-radius:20px;
+    transition: 1s;
+}
+
+.employees_photo img:hover{
+    transform: scale(1.2);
+}
     
 
 .btn_top {
@@ -106,17 +143,26 @@
 
 
 
-.order{
+.order {
     clear: both;
-    margin: 20px 34%;
-    background-color:darkgray;
-    border-radius: 20px;
+    margin: 30px 34%;
+    background-color:rgb(240, 234, 234);
+    padding-left: 10px;
+    text-align: left;
+    transition: 1s;
+    border-style:solid;
+    padding-bottom: 10px;
+}
+
+.order:hover{
+    transform: scale(1.2);
+    border-radius:20px;
 }
 
 form{
     margin-left: 32%;
     width: 500px;
-    padding-top: 150px;
+    padding-top: 30px;
 }
 
 .col-sm-10{
@@ -127,9 +173,6 @@ form{
 
 
 .footer{
-    position: fixed;
-    z-index: 4;
-    width: 100%;
-    top: 93%;
-    box-shadow: 50px 50px 50px 20px black;
+   
+    
 }

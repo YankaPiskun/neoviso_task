@@ -12,6 +12,14 @@ def about(request):
     return render(request, 'main/about.html')
 
 
+def employees(request):
+    return render(request, 'main/employees.html')
+
+
+def services(request):
+    return render(request, 'main/services.html')
+
+
 def order(request):
     orders = Order.objects.all()
     return render(request, "main/order.html", {'title': 'Заказы', 'orders': orders})

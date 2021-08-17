@@ -7,7 +7,9 @@
 {% block content %}
     <section class="create_logo">
     <div class="container">
-        
+        <h1 class="about_title">
+            Оформление заказа
+        </h1>
      <form method="post">
          {% csrf_token %}
          {{ form.clients_name }}<br>

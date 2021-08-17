@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<section class="create_logo">
+<section class="order_logo">
     <div class="container">
    <div class="features">
        <h1>Наши заказы</h1>
@@ -13,19 +13,20 @@
        {% for el in orders %}
        <div class="order">  
         <div>
-       <h3> Имя {{ el.clients_name }}</h3>
+           
+       <h3> Имя: {{ el.clients_name }}</h3>
         </div>      
         <div>
-       <h3>Фамилия {{ el.clients_surname }}</h3>
+       <h3>Фамилия: {{ el.clients_surname }}</h3>
     </div>
        <div>
-       <h3>Марка {{ el.car }}</h3>
+       <h3>Марка Авто: {{ el.car }}</h3>
     </div>
        <div>
-       <h3>Сотрудник  {{ el.employee}}</h3>
+       <h3>Сотрудник:  {{ el.employee}}</h3>
     </div>
        <div>
-       <h3>Услуга  {{ el.service }}</h3>
+       <h3>Услуга:  {{ el.service }}</h3>
     </div>
            <a href="{% url 'order-detail' el.id %}" class="btn btn-warning">Подробнее</a>
        </div>
