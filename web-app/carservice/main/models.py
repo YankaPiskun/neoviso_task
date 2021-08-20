@@ -39,12 +39,12 @@ class Service(models.Model):
 class Order(models.Model):
     clients_name = models.CharField('Имя', max_length=20)
     clients_surname = models.CharField('Фамилия', max_length=50)
-    car = models.ForeignKey(Car, related_name='cars', on_delete=models.CASCADE)
-    employee = models.ForeignKey(Employee, related_name='employees', on_delete=models.CASCADE)
-    service = models.ForeignKey(Service, related_name='service', on_delete=models.CASCADE)
+    car = models.ForeignKey(Car, related_name='Авто', on_delete=models.CASCADE)
+    employee = models.ForeignKey(Employee, related_name='Сотрудник', on_delete=models.CASCADE)
+    service = models.ForeignKey(Service, related_name='Услуга', on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.service
+        return self.clients_name
 
     def get_absolute_url(self):
         return f'/{self.id}'
